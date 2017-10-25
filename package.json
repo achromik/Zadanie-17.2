@@ -1,0 +1,23 @@
+{
+  "name": "zadanie-17.3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achromik/Zadanie-17.3.git"
+  },
+  "author": "Aleksander Chromik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achromik/Zadanie-17.3/issues"
+  },
+  "homepage": "https://github.com/achromik/Zadanie-17.3#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
