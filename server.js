@@ -5,7 +5,7 @@ var fs = require('fs');
 var app = express();
 var stringifyFile;
 
-var server = app.listen(3000);
+var server = app.listen(3001);
 
 app.use(bodyParser.json());
 
@@ -22,11 +22,7 @@ app.post('/updateNote/:note', (req, res) => {
     ///to prevent situation that user is going directly to endpoint /updateNote/:note 
     //whitout going first to endpoint /getNote
     if (stringifyFile  === 'undefined' ) {
-    
-        fs.readFile('./test.json', 'utf8', (err, data) => {
-            if (err) throw err;
-            stringifyFile = data;
-        });
+        res.redirect('/getNote');
     }
     
     stringifyFile = req.params.note;
